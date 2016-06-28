@@ -24,9 +24,7 @@ case class DBSCANPoint(val vector: Vector) {
   def y = vector(1)
 
   def distanceSquared(other: DBSCANPoint): Double = {
-    val dx = other.x - x
-    val dy = other.y - y
-    (dx * dx) + (dy * dy)
+    Vectors.sqdist(vector, other.vector)
   }
 
 }
