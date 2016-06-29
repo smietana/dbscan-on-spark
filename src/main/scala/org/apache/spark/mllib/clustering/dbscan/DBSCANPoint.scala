@@ -16,7 +16,7 @@
  */
 package org.apache.spark.mllib.clustering.dbscan
 
-import org.apache.spark.mllib.linalg.Vector
+import org.apache.spark.mllib.linalg.{Vector, Vectors}
 
 case class DBSCANPoint(val vector: Vector) {
 
